@@ -1,0 +1,318 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: #4B2E2B;
+    color: #fff8f0; 
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 40px;
+     letter-spacing: 2px;
+
+}
+
+.navbar {
+  background-color: #D7B49E;
+  margin: 20px auto 0;
+  width: 90%;
+  max-width: 900px;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  padding: 10px 0;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #4B2E2B;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: background 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  background-color: #B28566;
+  color: white;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #D7B49E; 
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #4B2E2B;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #B46F2B;
+}
+
+.navbar ul li:hover .dropdown-content {
+    display: block;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+
+.section-title {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #5C4033;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #7B3F00;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.section-intro {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 3rem;
+}
+
+
+.voucher-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.voucher-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding-bottom: 1.5rem; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+}
+
+.voucher-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.voucher-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block; 
+    border-bottom: 1px solid #eee;
+}
+
+.voucher-card h3 {
+    color: #7B3F00;
+    font-size: 1.5rem;
+    margin: 1.5rem 1.5rem 1rem;
+    text-align: center;
+}
+
+.voucher-card ul {
+    list-style: none;
+    padding: 0 1.5rem;
+    margin-bottom: 1.5rem;
+    flex-grow: 1; 
+}
+
+.voucher-card ul li {
+    margin-bottom: 0.5rem;
+    color: #555;
+    position: relative;
+    padding-left: 20px;
+}
+
+.voucher-card ul li::before {
+    content: '☕'; 
+    position: absolute;
+    left: 0;
+    color: #7B3F00;
+}
+
+
+.btn {
+    display: block;
+    width: fit-content;
+    margin: 0 auto; 
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+    cursor: pointer;
+}
+
+.primary-btn {
+    background-color: #A0522D; 
+    color: #fff;
+    border: none;
+}
+
+.primary-btn:hover {
+    background-color: #8B4513; 
+    transform: translateY(-2px);
+}
+
+.how-to-use {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    padding: 2.5rem;
+    margin-top: 3rem;
+}
+
+.how-to-use .section-title {
+    color: #5C4033;
+    margin-top: 0;
+}
+
+.how-to-use ol {
+    list-style-type: decimal;
+    padding-left: 25px;
+    color: #555;
+}
+
+.how-to-use ol li {
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+}
+
+.party-intro-section {
+    padding-top: 2rem; 
+}
+
+.how-to-book {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    padding: 2.5rem;
+    margin-top: 3rem;
+}
+
+.how-to-book .section-title {
+    color: #5C4033;
+    margin-top: 0;
+}
+
+.how-to-book ol {
+    list-style-type: decimal;
+    padding-left: 25px;
+    color: #555;
+}
+
+.how-to-book ol li {
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #5C4033; 
+    color: #fff; 
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .dropdown-content {
+        position: static; 
+        box-shadow: none;
+        width: 100%;
+    }
+
+    .voucher-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .voucher-card {
+        padding: 1rem;
+    }
+
+    .voucher-card h3 {
+        font-size: 1.3rem;
+        margin: 1rem 1rem 0.5rem;
+    }
+
+    .voucher-card ul {
+        padding: 0 1rem;
+    }
+
+    .how-to-use, .how-to-book { 
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .section-intro {
+        font-size: 1rem;
+    }
+}

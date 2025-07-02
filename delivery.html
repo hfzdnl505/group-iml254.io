@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EAU DÉ CAFE - Online Delivery</title>
+    <link rel="stylesheet" href="style-delivery.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+  <div class="header-container">
+    <img src="images/logo.png" class="logo">
+    <h1>EAU DÉ CAFE</h1>
+  </div>
+  <nav class="navbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+        	<li>
+	    	    <a href="menu.html">Menu</a> <div class="dropdown-content">
+	            <a href="new.html">What's New?</a>
+	            <a href="delivery.html">Online Delivery</a> </div>
+		</li>
+		<li><a href="atmosphere.html">Atmosphere</a></li>
+                <li>
+                    <a href="#"services.html">Services</a>
+                    <div class="dropdown-content">
+                    <a href="catering.html">Catering</a>
+                    <a href="voucher.html">Voucher</a>
+                    <a href="party.html">Party</a>
+                    </div>
+                </li>
+       		<li>
+	    	    <a href="about.html">About EDC</a> <div class="dropdown-content">
+	    	    <a href="history.html">History</a>
+	    	    <a href="vmo.html">Vision, Mission & Objective</a>
+	    	    <a href="organizationchart.html">Organization Chart</a>
+	    	    <a href="logo.html">Cafe Logo</a> </div>
+		</li>
+        	<li>
+	    	    <a href="contact.html">Contact EDC</a> <div class="dropdown-content">
+	    	    <a href="branches.html">Branches</a>
+	    	    <a href="faq.html">FAQ</a> </div>
+		</li>
+            </ul>
+        </nav>
+    </header>
+
+<main class="delivery-container">
+  <section class="food-showcase">
+    <h2>What Can We Deliver?</h2>
+    <div class="food-grid">
+      <div class="food-card">
+        <img src="images/mochi.jpg" alt="Mochi">
+        <h3>Mochi</h3>
+        <p>RM2.00 each</p>
+        <a href="menu.html" class="menu-button">View Details</a>
+      </div>
+      <div class="food-card">
+        <img src="images/pizdo.jpg" alt="Donut Pizza">
+        <h3>Donut Pizza</h3>
+        <p>RM5.00</p>
+        <a href="menu.html" class="menu-button">View Details</a>
+      </div>
+      <div class="food-card">
+        <img src="images/odonut.jpg" alt="O-Donut">
+        <h3>O-Donut</h3>
+        <p>RM2.50 each</p>
+        <a href="menu.html" class="menu-button">View Details</a>
+      </div>
+      <div class="food-card">
+        <img src="images/tart.jpg" alt="Cheese Tart">
+        <h3>Cheese Tart</h3>
+        <p>RM1.50 each</p>
+        <a href="menu.html" class="menu-button">View Details</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="order-form">
+    <h2>Your Details, Please</h2>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Select Your Meal:</legend>
+        <label><input type="checkbox" name="food" value="Mochi"> Mochi</label><br>
+        <label><input type="checkbox" name="food" value="Donut Pizza"> Donut Pizza</label><br>
+        <label><input type="checkbox" name="food" value="O-Donut"> O-Donut</label><br>
+        <label><input type="checkbox" name="food" value="Cheese Tart"> Cheese Tart</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Your Info:</legend>
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="address">House Location / Address:</label><br>
+        <textarea id="address" name="address" rows="4" required></textarea>
+      </fieldset>
+
+      <br>
+      <button type="submit" class="submit-button">Submit Order</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 EAU DÉ CAFE. All rights reserved.</p>
+</footer>

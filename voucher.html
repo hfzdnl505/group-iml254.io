@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voucher</title>
+    <link rel="stylesheet" href="style-voucher.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+  <div class="header-container">
+    <img src="images/logo.png" class="logo">
+    <h1>EAU DÉ CAFE</h1>
+  </div>
+  <nav class="navbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+        	<li>
+	    	    <a href="menu.html">Menu</a> <div class="dropdown-content">
+	            <a href="new.html">What's New?</a>
+	            <a href="delivery.html">Online Delivery</a> </div>
+		</li>
+		<li><a href="atmosphere.html">Atmosphere</a></li>
+                <li>
+                    <a href="#"services.html">Services</a>
+                    <div class="dropdown-content">
+                    <a href="catering.html">Catering</a>
+                    <a href="voucher.html">Voucher</a>
+                    <a href="party.html">Party</a>
+                    </div>
+                </li>
+       		<li>
+	    	    <a href="about.html">About EDC</a> <div class="dropdown-content">
+	    	    <a href="history.html">History</a>
+	    	    <a href="vmo.html">Vision, Mission & Objective</a>
+	    	    <a href="organizationchart.html">Organization Chart</a>
+	    	    <a href="logo.html">Cafe Logo</a> </div>
+		</li>
+        	<li>
+	    	    <a href="contact.html">Contact EDC</a> <div class="dropdown-content">
+	    	    <a href="branches.html">Branches</a>
+	    	    <a href="faq.html">FAQ</a> </div>
+		</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="voucher-section">
+            <h2 class="section-title">this is our special voucher!</h2>
+            <p class="section-intro">do not lost your chance to enjoy the offer</p>
+
+            <div class="voucher-grid">
+                <div class="voucher-card">
+                    <img src="images/matcha.png" 
+text=matcha lover" alt="matcha discount" class="voucher-image">
+                    <h3>15% Discount For Matcha Lovers!</h3>
+                    <ul>
+                        <li>15% discount</li>
+                        <li>only available for the matcha</li>
+                        <li>every wednesday</li>
+                        <li>30 October 2025</li>
+                        <li> show the voucher at the counter </li>
+                        <li>only one voucher per buy</li>
+                    </ul>
+                    <a href="#" class="btn primary-btn claim-btn" data-voucher-name="15% Discount For Matcha Lovers!">Claim Here!</a>
+                </div>
+
+                <div class="voucher-card">
+                    <img src="images/buy2get1.png" alt="Voucher Beli 1 Percuma 1 Pastri" class="voucher-image">
+                    <h3>Buy 2 Free 1 !</h3>
+                    <ul>
+                        <li>Buy 2 drinks Free 2 pcs mochi </li>
+                        <li>Only coffee edition drinks </li>
+                        <li>Free Mochi cannot be replaced with other pastry or dessert</li>
+                        <li>valid until 30 october 2025</li>
+                        <li>show our staff the voucher to claim your free mochi</li>
+                    </ul>
+                    <a href="#" class="btn primary-btn claim-btn" data-voucher-name="Buy 2 Free 1 !">Claim Here !</a>
+                </div>
+
+                <div class="voucher-card">
+                    <img src="images/students.png" alt="buy 1 free1" class="voucher-image">
+                    <h3>Student Voucher</h3>
+                    <ul>
+                        <li>Large pizza for 2-4 people and soft drinks </li>
+                        <li>Only available every thursday 3PM-10PM</li>
+                        <li>Please Bring Your Student card</li>
+			<li>Valid until 31 december 2025 </li>
+
+                    </ul>
+                    <a href="#" class="btn primary-btn claim-btn" data-voucher-name="Student Voucher">Claim Here</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="how-to-use">
+            <h2 class="section-title">How to use the voucher?</h2>
+            <ol>
+                <li>Choose the voucher</li>
+                <li>Click the claim button.</li>
+                <li>Screenshot the proof that you have claim the voucher</li>
+		<li>Show the screenshot to the staff at the cashier when you go to our cafe</li>
+                <li>And enjoy your offer !</li>
+            </ol>
+        </section>
+   </main>
+
+  <footer>
+    <p>&copy; 2025 EAU DÉ CAFE. All rights reserved.</p>
+  </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const claimButtons = document.querySelectorAll('.claim-btn');
+
+            claimButtons.forEach(button => {
+                button.addEventListener('click', function(event) {
+                    event.preventDefault(); // Prevent the default link behavior
+                    const voucherName = this.getAttribute('data-voucher-name');
+                    alert(`You have claimed the voucher"${voucherName}"Please show this message to our staff for the claim.`);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

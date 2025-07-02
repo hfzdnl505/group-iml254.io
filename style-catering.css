@@ -1,0 +1,313 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #d9c2a3;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background: #4B2E2B;
+  color: #fff8f0;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+
+.logo {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  height: 120px;
+  width: auto;
+}
+
+.navbar {
+  background-color: #D7B49E;
+  margin: 20px auto 0;
+  width: 90%;
+  max-width: 900px;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  padding: 10px 0;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #4B2E2B;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: background 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  background-color: #B28566;
+  color: white;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #D7B49E;
+  min-width: 160px;
+  z-index: 1;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.dropdown-content a {
+  color: #4B2E2B;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: #B46F2B;
+  color: white;
+}
+
+.navbar ul li:hover .dropdown-content {
+  display: block;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #5C4033;
+}
+
+.hero-catering {
+  background: url('images/catering_bg.jpg') no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+  margin-bottom: 30px;
+}
+
+.hero-catering h2 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.hero-catering p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.btn {
+  display: inline-block;
+  background: #B46F2B;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #7B3F00;
+}
+
+.image-gallery {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.image-gallery img {
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  max-width: 100%;
+  height: auto;
+}
+
+.image-gallery img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.info-grid,
+.package-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin: 0 auto 50px;
+  padding: 0 20px;
+  max-width: 1200px;
+}
+
+.info-item,
+.package-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.info-item img {
+  max-width: 80px;
+  margin-bottom: 15px;
+}
+
+.info-item h4,
+.package-card h4 {
+  color: #B46F2B;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.package-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.package-card ul li {
+  margin-bottom: 8px;
+}
+
+.package-card .price {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #5C4033;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #5C4033;
+  color: #fff;
+  margin-top: 30px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.6);
+  padding-top: 60px;
+}
+
+#packageModal .modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 30px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  text-align: left;
+}
+
+#packageModal .modal-content h3 {
+  color: #5C4033;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+#packageModal .modal-content p {
+  font-size: 1.1rem;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+#packageModal .modal-content ul {
+  list-style: disc;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+#packageModal .modal-content ul li {
+  margin-bottom: 8px;
+  color: #444;
+}
+
+#myModal {
+  background-color: rgba(0,0,0,0.9);
+  padding-top: 100px;
+}
+
+#myModal .modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  background-color: transparent;
+}
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+@keyframes zoom {
+  from {transform: scale(0);}
+  to {transform: scale(1);}
+}
+
+.modal-content,
+#caption {
+  animation: zoom 0.6s ease-in-out;
+}
+
+.close,
+.close-button {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 25px;
+}
+
+#myModal .close {
+  color: #f1f1f1;
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+}
+
+.close:hover,
+.close:focus,
+.close-button:hover,
+.close-button:focus {
+  color: #000;
+  text-decoration: none;
+}

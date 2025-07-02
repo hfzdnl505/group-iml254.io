@@ -1,0 +1,134 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #d9c2a3;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #4B2E2B;
+  color: #fff8f0;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+
+.logo {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  height: 120px;
+  width: auto;
+}
+
+.navbar {
+  background-color: #D7B49E;
+  margin: 20px auto 0;
+  width: 90%;
+  max-width: 900px;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  padding: 10px 0;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #4B2E2B;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: background 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  background-color: #B28566;
+  color: white;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #D7B49E;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.dropdown-content a {
+    color: #4B2E2B;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #B46F2B;
+    color: white;
+}
+
+
+.navbar ul li:hover .dropdown-content {
+    display: block;
+}
+
+.vmo-section {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #fff8f0;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #4B2E2B;
+}
+
+.vmo-section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #5e4635;
+}
+
+.vmo-section p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 12px 0;
+  height: 50px;
+  width: 100%;
+  margin-top: 60px;
+}
+
+html, body {
+  height: 100%;
+}
+
+.main-wrapper {
+  min-height: calc(100vh - 50px);
+}

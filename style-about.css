@@ -1,0 +1,157 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #d9c2a3;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #4B2E2B;
+  color: #fff8f0;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+
+.logo {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  height: 120px;
+  width: auto;
+}
+
+.navbar {
+  background-color: #D7B49E;
+  margin: 20px auto 0;
+  width: 90%;
+  max-width: 900px;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  padding: 10px 0;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #4B2E2B;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: background 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  background-color: #B28566;
+  color: white;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #D7B49E;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.dropdown-content a {
+  color: #4B2E2B;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: #B46F2B;
+  color: white;
+}
+
+.navbar ul li:hover .dropdown-content {
+  display: block;
+}
+
+h2 {
+  text-align: center;
+  color: #4B2E2B;
+  margin-top: 40px;
+  font-size: 32px;
+}
+
+.info-table {
+  width: 90%;
+  max-width: 1000px;
+  margin: 30px auto;
+  border-collapse: collapse;
+  background-color: #fff8f0;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.info-table th, .info-table td {
+  border: 1px solid #B28566;
+  padding: 20px;
+  vertical-align: top;
+  text-align: left;
+  color: #4B2E2B;
+}
+
+.info-table th {
+  background-color: #D7B49E;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.info-table td p {
+  margin: 10px 0;
+  line-height: 1.8;
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 12px 0;
+  height: 50px;
+  width: 100%;
+  margin-top: 60px;
+}
+
+html, body {
+  height: 100%;
+}
+
+.main-wrapper {
+  min-height: calc(100vh - 50px);
+}
+
+@media (max-width: 600px) {
+  .info-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}

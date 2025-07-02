@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EAU DÉ CAFE - Catering Services</title>
+    <link rel="stylesheet" href="style-catering.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+  <div class="header-container">
+    <img src="images/logo.png" class="logo">
+    <h1>EAU DÉ CAFE</h1>
+  </div>
+  <nav class="navbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+        	<li>
+	    	    <a href="menu.html">Menu</a> <div class="dropdown-content">
+	            <a href="new.html">What's New?</a>
+	            <a href="delivery.html">Online Delivery</a> </div>
+		</li>
+		<li><a href="atmosphere.html">Atmosphere</a></li>
+                <li>
+                    <a href="#"services.html">Services</a>
+                    <div class="dropdown-content">
+                    <a href="catering.html">Catering</a>
+                    <a href="voucher.html">Voucher</a>
+                    <a href="party.html">Party</a>
+                    </div>
+                </li>
+       		<li>
+	    	    <a href="about.html">About EDC</a> <div class="dropdown-content">
+	    	    <a href="history.html">History</a>
+	    	    <a href="vmo.html">Vision, Mission & Objective</a>
+	    	    <a href="organizationchart.html">Organization Chart</a>
+	    	    <a href="logo.html">Cafe Logo</a> </div>
+		</li>
+        	<li>
+	    	    <a href="contact.html">Contact EDC</a> <div class="dropdown-content">
+	    	    <a href="branches.html">Branches</a>
+	    	    <a href="faq.html">FAQ</a> </div>
+		</li>
+            </ul>
+        </nav>
+    </header>
+
+     <section class="image-gallery">
+            <h3 class="section-title">Lets take a look our offer!</h3>
+            <img id="myImg" src="images/cateringflyer.png" width="400">
+            <p style="font-style: italic; margin-top: 10px; color: #666;"</p>
+        </section>
+
+        
+        <section class="catering-packages">
+            <h3 class="section-title">Our Package</h3>
+            <div class="package-grid">
+                <div class="package-card"
+                     data-title="Basic package"
+                     data-price="Starting Price : RM500"
+                     data-details="<ul>
+                                        <li> Regular size cup</li>
+					<li> Coffee edition: 
+						Cappucino and latte </li>		 
+                                        <li>Tea edition:
+						Green Tea and Strawberry Tea </li>
+                                        <li>2 type of pastry:
+						pavlova and mochi</li>
+					<li> Suitable for 10 - 20 guest </li> 
+					<li> Self services, no staff will be on duty 					 	for the event </li>
+					<li> drinks will be serve by the amount of the 						guest </li> 
+                                    </ul>">
+                    <h4>Basic Package</h4>
+                    <ul>
+                        <li>Coffee Edition</li>
+                        <li>Tea Edition</li>
+                        <li>Pastry</li>
+                    </ul>
+                    <p class="price">Starting from RM500</p>
+                    <button class="btn view-details-btn">See details</button>
+                </div>
+
+                <div class="package-card"
+                     data-title="Premium Package"
+                     data-price="Starting Price: RM1200"
+                     data-details="<ul>
+                                        <li>Full package of coffee and tea 							edition</li>
+					<li> Coffee : cappucino, latte and americano
+					     Tea : Green Tea, Strawberry Tea and 						Pappermint Tea </li>
+					<li> Regular size cup </li> 
+                                        <li>Special edition drinks 10 cups : Matcha 					Latte and Hazelnut Coffee</li>
+                                        <li>3 type of pastry : pavlova, mochi and 						doughnuts</li>
+                                        <li>Suitable for 20-50 guest</li>
+                                        <li>Including staff at the booth for 2 hours 							</li>
+                                    </ul>">
+                    <h4>Premium Package</h4>
+                    <ul>
+                        <li>Full package of coffee and tea </li>
+                        <li>Special Drinks </li>
+                        <li>3 types of pastry</li>
+                    </ul>
+                    <p class="price">Starting from RM1200</p>
+                    <button class="btn view-details-btn">See Details</button>
+                </div>
+
+                <div class="package-card"
+                     data-title="Special Event Package"
+                     data-price="Contact Us for the price"
+                     data-details="<ul>
+                                        <li>Full Menu according the event theme</li>
+                                        <li>Professional Barista along the event </li>
+                                        <li>Special serving for opening and closing 										event </li>
+                                        <li>Suitable for 50+ guest</li>
+                                        <li>Accept requsting menu</li>
+                                        <li>Full management provided</li>
+					<li> Pricing based on customer requirement 										</li> 
+                                    </ul>">
+                    <h4>Special Event Package</h4>
+                    <ul>
+                        <li>Full menu</li>
+                        <li>Barista on the booth</li>
+                        <li>Suitable for 50+ guest</li>
+                    </ul>
+                    <p class="price">Contact us for the price</p>
+                    <button class="btn view-details-btn">See Details</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="how-to-book">
+            <h2 class="section-title">How to Book Your Party?</h2>
+            <ol>
+                <li>Visit our "Contact Us" section to view our Branch details.</li>
+                <li>Contact your preferred Branch or fill out our inquiry form.</li>
+                <li>Discuss your event needs with our team.</li>
+                <li>Receive a customized offer and confirm your booking.</li>
+                <li>Enjoy your unforgettable party at EAU DÉ CAFE!</li>
+            </ol>
+        </section>
+    </main>
+
+
+
+        <footer>
+        <p>&copy; 2025 EAU DÉ CAFE. All rights reserved.</p>
+    </footer>
+
+    <div id="packageModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h3 id="modalTitle"></h3>
+            <p id="modalPrice"></p>
+            <div id="modalDetails"></div>
+            <button class="btn primary-btn" onclick="location.href='#contact-form'; closeModal('packageModal');">Request for price </button>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
+    <script>
+        const packageModal = document.getElementById('packageModal');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalPrice = document.getElementById('modalPrice');
+        const modalDetails = document.getElementById('modalDetails');
+        const closePackageButton = document.querySelector('#packageModal .close-button');
+        const viewDetailsButtons = document.querySelectorAll('.view-details-btn');
+
+        viewDetailsButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const card = this.closest('.package-card');
+                modalTitle.textContent = card.dataset.title;
+                modalPrice.textContent = card.dataset.price;
+                modalDetails.innerHTML = card.dataset.details;
+                packageModal.style.display = 'block';
+            });
+        });
+
+        closePackageButton.addEventListener('click', function() {
+            closeModal('packageModal');
+        });
+
+        const imageModal = document.getElementById('myModal');
+        const myImg = document.getElementById('myImg');
+        const modalImg = document.getElementById("img01");
+        const captionText = document.getElementById("caption");
+        const closeImageButton = document.querySelector('#myModal .close');
+
+        if (myImg) {
+            myImg.onclick = function(){
+                imageModal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+        }
+
+        if (closeImageButton) {
+            closeImageButton.onclick = function() {
+                closeModal('myModal');
+            }
+        }
+
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+        }
+
+   
+        window.addEventListener('click', function(event) {
+            if (event.target == packageModal) {
+                closeModal('packageModal');
+            }
+            if (event.target == imageModal) {
+                closeModal('myModal');
+            }
+        });
+    </script>
+</body>
+</html>

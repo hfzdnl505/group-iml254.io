@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EAU DÉ CAFE - Home</title>
+  <link rel="stylesheet" href="style-home.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+</head>
+<body>
+<div class="main-wrapper">
+<video autoplay muted loop playsinline class="background-video">
+  <source src="videos/cafevideo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<div class="overlay"></div>
+<header>
+  <div class="header-container">
+    <img src="images/logo.png" class="logo">
+    <h1>EAU DÉ CAFE</h1>
+  </div>
+  <nav class="navbar">
+      <ul>
+        <li>
+	    <a href="menu.html">Menu</a> <div class="dropdown-content">
+	    <a href="new.html">What's New?</a>
+	    <a href="delivery.html">Online Delivery</a> </div>
+	</li>
+	<li><a href="atmosphere.html">Atmosphere</a></li>
+        <li>
+            <a href="#"services.html>Services</a> <div class="dropdown-content">
+            <a href="catering.html">Catering</a> <a href="voucher.html">Voucher</a>
+            <a href="party.html">Party</a> </div>
+        </li>
+        <li>
+	    <a href="about.html">About EDC</a> <div class="dropdown-content">
+	    <a href="history.html">History</a>
+	    <a href="vmo.html">Vision, Mission & Objective</a>
+	    <a href="organizationchart.html">Organization Chart</a>
+	    <a href="logo.html">Cafe Logo</a> </div>
+	</li>
+        <li>
+	    <a href="contact.html">Contact EDC</a> <div class="dropdown-content">
+	    <a href="branches.html">Branches</a>
+	    <a href="faq.html">FAQ</a> </div>
+	</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <p>Welcome to EAU DÉ CAFE, your go-to place for delicious beverages and desserts.</p>
+<div class="slideshow-container">
+  <img class="slide active" src="images/newmenu.jpg" alt="New Menu">
+  <img class="slide" src="images/eaudecafe.jpg" alt="EAU DÉ CAFE">
+  <img class="slide" src="images/eaudecafe2.jpg" alt="Slide 3">
+  <img class="slide" src="images/eaudecafe3.jpg" alt="Slide 4">
+</div>
+  </main>
+
+<section class="fast-selling">
+  <h2>Best-Selling Dishes</h2>
+  <div class="menu-grid">
+    <a href="menu.html" class="menu-card">
+      <img src="images/pizza.jpg" alt="Pepperoni Pizza">
+      <h3>Pepperoni Pizza</h3>
+    </a>
+    <a href="menu.html" class="menu-card">
+      <img src="images/kimochi.jpg" alt="Mochi">
+      <h3>Mochi</h3>
+    </a>
+    <a href="menu.html" class="menu-card">
+      <img src="images/softcookies.jpg" alt="Soft Cookies">
+      <h3>Soft Cookies</h3>
+    </a>
+    <a href="menu.html" class="menu-card">
+      <img src="images/spicykchick.jpg" alt="Spicy Korean Chicken">
+      <h3>Spicy Korean Chicken</h3>
+    </a>
+  </div>
+</section>
+
+  <footer>
+    <p>&copy; 2025 EAU DÉ CAFE. All rights reserved.</p>
+  </footer>
+
+<script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll(".slide");
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.remove("active");
+      if (i === index) slide.classList.add("active");
+    });
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  showSlide(currentSlide);
+  setInterval(nextSlide, 3000); // Change every 3 seconds
+</script>
+
+</body>
+</html>
+
